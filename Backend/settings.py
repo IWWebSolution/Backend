@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-dq@-2f!o!t*owj&(j-ycl=8j$vdyikgf*(c!1!v7vf85!g)abe
 DEBUG = False
 SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['iwwebsolutions.com', 'www.iwwebsolutions.com', 'api.iwwebsolutions.com']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
