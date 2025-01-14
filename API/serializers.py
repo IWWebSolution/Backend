@@ -21,4 +21,4 @@ class ContactSerializer(serializers.ModelSerializer):
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
-        fields = ['name', 'email', 'company_name', 'review']
+        fields = ['name', 'email', 'company_name', 'review','created_at']
