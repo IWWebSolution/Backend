@@ -102,7 +102,7 @@ def submit_review(request):
             return JsonResponse({'error': str(e)}, status=500)
 
     # If the method is not POST, return a method not allowed response
-    return JsonResponse({'error': 'Invalid request method. Only POST allowed.'}, status=405)
+    return JsonResponse({'error': 'Invalid request method. Only POST allowed. MS '}, status=405)
 
 @csrf_exempt
 def get_reviews(request):
