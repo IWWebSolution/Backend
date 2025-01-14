@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import BaseForm, OurBusiness, Contact
+from .models import BaseForm, OurBusiness, Contact, Review
 
 class BaseFormSerializer(serializers.ModelSerializer):
     class Meta:
@@ -17,3 +17,8 @@ class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model= Contact
         fields = ['name', 'email', 'subject', 'message']
+
+class ReviewSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review
+        fields = ['name', 'email', 'company_name', 'review','created_at']

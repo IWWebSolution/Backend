@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import BaseForm, OurBusiness, Contact
+from .models import BaseForm, OurBusiness, Contact, Review
 
 @admin.register(BaseForm)
 class IndexAdmin(admin.ModelAdmin):
@@ -20,5 +20,9 @@ class OurBusinessAdmin(admin.ModelAdmin):
 class ContactAdmin(admin.ModelAdmin):
     list_display =('id', 'name', 'email', 'subject', 'message')
     search_fields = ('name', 'email')
-   
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'email', 'company_name', 'review', 'created_at')
+    search_fields= ('name', 'email', 'company_name', 'review')
     
