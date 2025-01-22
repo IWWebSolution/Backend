@@ -23,6 +23,6 @@ class ContactAdmin(admin.ModelAdmin):
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'email', 'company_name', 'review', 'created_at')
+    list_display = ('id', 'name', 'email', 'company_name', 'review', 'rating', 'created_at')
     search_fields= ('name', 'email', 'company_name', 'review')
     
